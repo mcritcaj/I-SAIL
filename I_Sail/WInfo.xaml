@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:I_Sail"
+             x:Class="I_Sail.WInfo">
+    <ContentPage.Resources>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="10,20,10,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Current Weather Conditions" 
+                   Grid.ColumnSpan="3"
+                   HorizontalOptions="Center"
+                   TextColor="White" 
+                   FontAttributes="Bold" 
+                   FontSize="Title" />
+
+                <Label Text="Enter Your City:" 
+                   Grid.Row="1" 
+                   VerticalOptions="Center" FontSize="Subtitle"
+                       />
+
+                <Entry x:Name="_cityEntry"
+                   Grid.Row="1" 
+                   Grid.Column="1"
+                   Margin="5,0"
+                   VerticalOptions="Center"
+                   Text="" />
+
+                <Button Grid.Row="1" 
+                    Grid.Column="2"
+                    Text="GO!" 
+                    BorderWidth="1"
+                    Clicked="OnGetWeatherButtonClicked" />
+            </Grid>
+
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout Padding="10">
+                    <Label Text="Race City:" FontSize="Subtitle"/>
+                    <Label Text="{Binding Title}"/>
+
+                    <Label Text="Temperature:" FontSize="Subtitle" />
+                    <Label Text="{Binding Main.Temperature}"  />
+
+                    <Label Text="Wind Speed:" FontSize="Subtitle" />
+                    <Label Text="{Binding Wind.Speed}"  />
+
+                    <Label Text="Wind Direction:" FontSize="Subtitle" />
+                    <Label Text="{Binding Wind.Deg}" />
+
+                    <Label Text="Humidity:" FontSize="Subtitle" />
+                    <Label Text="{Binding Main.Humidity}" />
+
+                    <Label Text="Visibility" FontSize="Subtitle"/>
+                    <Label Text="{Binding Weather[0].Visibility}"/>
+                </StackLayout>
+            </ScrollView>
+            <Label Text="Stay Safe On The Water!" HorizontalOptions="CenterAndExpand" FontSize="Title"  Padding="0,0,0,0"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

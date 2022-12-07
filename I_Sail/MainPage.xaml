@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            BarBackgroundColor="	#1da2d8"
+            SelectedTabColor="Black"
+            UnselectedTabColor="White"
+            x:Class="I_Sail.MainPage"
+            xmlns:local="clr-namespace:I_Sail">
+
+    <local:RacePage Title="Races"></local:RacePage>
+    <local:TeamInfo Title="Teams"></local:TeamInfo>
+    <local:SailorInfo Title="Sailors"></local:SailorInfo>
+    <local:Settings Title="Settings"></local:Settings>
+    <local:WInfo Title="Weather"></local:WInfo>
+    
+
+</TabbedPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="I_Sail.SailorInfo">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label FontSize="Title" Text="MCSA Sailors" HorizontalOptions="Start"></Label>
+            </StackLayout>
+
+            <ListView x:Name="lvSailors"></ListView>
+
+            <StackLayout>
+                <Label Text="Search By School" HorizontalOptions="Start"></Label>
+                <Entry x:Name="SailorSearch" Placeholder="School Name" ></Entry>
+                <Button Text="Search Schools" Clicked="Button_Clicked_1"></Button>
+                <Button Text="Reset" Clicked="Button_Clicked_2"></Button>
+            </StackLayout>
+            <Label Text="---" HorizontalOptions="Center"></Label>
+            <StackLayout Padding="10,0,10,10">
+                <Label Text="Add A New Sailor!"></Label>
+                <Entry x:Name="SailorName" Placeholder="Your Name" ></Entry>
+                <Entry x:Name="SailorSchool" Placeholder="Your School" ></Entry>
+                <Entry x:Name="SailorAge" Placeholder="Your Age" ></Entry>
+                <Entry x:Name="SailorPosition" Placeholder="Your Position" ></Entry>
+                <Button Text="Add Sailor" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="I_Sail.Settings">
+    <ContentPage.Content>
+        <StackLayout Padding="10,10,10,0">
+            <Label Text="Settings" HorizontalOptions="CenterAndExpand" FontSize="Title"></Label>
+            <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
+                <Label Text="Your Name:"></Label>
+                <Entry x:Name="userName" HorizontalOptions="FillAndExpand"></Entry>
+                <Button Text="Change Name" Clicked="Button_Clicked_Name"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
+                <Label Text="Your Password:"></Label>
+                <Entry x:Name="userPassword" HorizontalOptions="FillAndExpand"></Entry>
+                <Button Text="Change Password" Clicked="Button_Clicked_Password"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
+                <Label Text="Your School:"></Label>
+                <Entry x:Name="userSchool" HorizontalOptions="FillAndExpand"></Entry>
+                <Button Text="Change School" Clicked="Button_Clicked_School"></Button>
+            </StackLayout>
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="Your Information" FontSize="Title"></Label>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Your Name:"></Label>
+                    <Label x:Name="userNameLabel"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Your Password:"></Label>
+                    <Label x:Name="userPasswordLabel"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Your School:"></Label>
+                    <Label x:Name="userSchoolLabel"></Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

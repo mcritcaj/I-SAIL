@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="I_Sail.TeamInfo">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label FontSize="Title" Text="MCSA Teams" HorizontalOptions="Start"></Label>
+            </StackLayout>
+
+            <ListView x:Name="lvTeam"></ListView>
+
+            <ScrollView>
+                <StackLayout>
+                    <Image Source="https://miamisailing.tripod.com/sitebuildercontent/sitebuilderpictures/burgee2.jpg" HorizontalOptions="CenterAndExpand"></Image>
+                    <Image Source="https://images.squarespace-cdn.com/content/v1/5a5ad2ca8a02c70357f3f50a/1515907596660-N4Z4JA1I2SGI4E8K8OR6/Burgee.png" HorizontalOptions="CenterAndExpand"></Image>
+                    <Image Source="https://www.shopaztecs.com/images/product/medium/7125SDS.png" HorizontalOptions="CenterAndExpand"></Image>
+                    <Image Source="https://static.wixstatic.com/media/c259a2_43e008e73f7647e4bf9649f845dc214c~mv2.jpg/v1/fill/w_400,h_260,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c259a2_43e008e73f7647e4bf9649f845dc214c~mv2.jpg" HorizontalOptions="CenterAndExpand"></Image>
+                </StackLayout>
+            </ScrollView>
+            
+            <StackLayout Padding="10,0,10,10">
+                <Entry x:Name="TeamName" Placeholder="Your Team" ></Entry>
+                <Button Text="Add Team" Clicked="Button_Clicked_AddTeam"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

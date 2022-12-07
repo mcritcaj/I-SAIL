@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="I_Sail.RacePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="Title" Text="Welcome To I-Sail!" HorizontalOptions="Start"></Label>
+            <Image Source="https://t3.ftcdn.net/jpg/02/29/40/90/360_F_229409051_NdhLXjpaBBvEifkeitbJjUvY822Xo8M1.jpg"></Image>
+            <StackLayout>
+                <Label FontSize="Subtitle" Text="This Years Races" HorizontalOptions="Start"></Label>
+            </StackLayout>
+
+            <ListView x:Name="lvRaces"></ListView>
+
+            <StackLayout Padding="10,0,10,10">
+                <Entry x:Name="RaceName" Placeholder="Your Race" ></Entry>
+                <Button Text="Add Race" Clicked="Button_Clicked_AddRace"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
